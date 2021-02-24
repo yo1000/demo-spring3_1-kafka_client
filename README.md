@@ -4,5 +4,6 @@ Examples
 ```
 ./mvnw clean package && docker-compose up
 
-curl -i -XPOST -H'Content-Type: application/json; charset=utf-8' -d"TEST $(date '+%Y-%m-%d %H:%M:%S')" localhost:8080/message/
+curl -i -XPOST -H'Content-Type: plain/text; charset=utf-8' -d"TEST $(date '+%Y-%m-%d %H:%M:%S')" localhost:8080/message/
+curl -i -XPOST -H'Content-Type: plain/text; charset=utf-8' -d"TEST $(date '+%Y-%m-%d %H:%M:%S')" localhost:8080/message/
 ```
